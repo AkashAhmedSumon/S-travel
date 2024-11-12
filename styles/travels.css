@@ -1,0 +1,13 @@
+body{
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Default CSS style */
+
+:root{
+    --primary-color: #FF5400;
+    --title-color: #131318;
+    --card-color: #5A5A5D;
+    --menu-color: #424247;
+}
