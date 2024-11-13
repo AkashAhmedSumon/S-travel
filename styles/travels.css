@@ -179,6 +179,9 @@ body{
     line-height: 26px; 
 }
 
+.img-group{
+    margin-bottom: 70px;
+}
 .group-img{
     display: flex;
     gap: 24px;
@@ -186,10 +189,81 @@ body{
   
 }
 
+.card-list{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+.card-group{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    padding: 2rem;
+    width: 575px;
+    margin: auto;
+}
+.middle{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+.card-middle{
+    margin-bottom: 100px;
+}
+.card-title{
+    color: var(--title-color);
+    font-size: 24px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.card-description{
+    color: var(--card-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; 
+}
 
+/* Footer section styles */
+.footer{
+    background: rgba(19, 19, 24, 0.05);
+    padding: 100px 0px;
+}
 
-
-
+.img-center{
+    max-width: 265px;
+    margin: auto;
+}
+.footer-content{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.footer-description{
+    color: var(--description-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 30px;
+}
+.footer-icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border-top: 1px solid var(--card-color);
+    padding: 50px 0px 0px 0px;
+    border-color: rgba(19, 19, 24, 0.10);
+    margin: 0;
+}
+.footer-icon li{
+    list-style: none;
+    
+}
+.footer-icon a{
+    color: var(--title-color);
+    margin-right: 10px;
+    font-size: 18px;
+    
+}
 
 
 /* Mobile Devices */
@@ -205,14 +279,16 @@ body{
     .menu-list, 
     .navbar,
     .popular-part,
-    .group-img{
+    .group-img,
+    .card-list{
         flex-direction: column;
     }
     .menu-list{
         padding: 0;
     }
     .menu-list a,
-    .destination-section{
+    .destination-section,
+    .card-list{
         margin: 0rem;
     }
     .menu-list li{
@@ -228,8 +304,13 @@ body{
     .banner-part,
     .popular-part,
     .destination-section,
-    .img-group{
+    .img-group,
+    .card-list{
         padding: 20px;
+    }
+    .card-middle{
+        padding: 0px 24px 24px;
+        margin-bottom: 30px;
     }
     .banner-form input{
         width: 95%;
@@ -251,15 +332,23 @@ body{
     .popular-part{
         margin: 20px 0px 30px;
     }
-    .destination-title{
+    .destination-title,
+    .card-title{
         font-size: 20px;
     }
-    .destination-description{
+    .destination-description,
+    .card-description{
         font-size: 14px;
     }
     .img-group img{
         width: 335px;
         height: 175px;
+    }
+    .card-group{
+        width: 80%;
+    }
+    .img-group{
+        margin-bottom: 30px;
     }
     
 }
