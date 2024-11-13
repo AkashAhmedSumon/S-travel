@@ -11,3 +11,166 @@ body{
     --card-color: #5A5A5D;
     --menu-color: #424247;
 }
+
+.btn-primary{
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0px;
+    padding: 1rem 2rem;
+    text-transform: capitalize;
+}
+
+/* Header Section styles */
+
+.container{
+    max-width: 1180px;
+    margin: auto;
+}
+
+.header-img{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-img img{
+    width: 50px;
+    height: 50px;
+}
+.header-logo{
+    color: var(--title-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+.traveling{
+    color: #FF5400;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0rem;
+}
+.menu-list{
+    display: flex;
+    align-items: center;
+}
+
+.menu-list li{
+    list-style: none;
+}
+.menu-list a{
+    color: var(--card-color);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-left: 2.5rem;
+
+}
+.menu-list a.active{
+    color: var(--primary-color);
+}
+
+/* Banner Section styles */
+
+.banner-part{
+    background-image: url("../Images/Group 13 (1) (1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+.banner-content{
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.banner-title{
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.banner-description{
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 1.5rem 0rem 3rem 0rem;
+}
+
+.banner-form{
+    max-width: 785px;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 1rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+.banner-form input{
+    border-radius: 8px;
+    background: #FFF;
+    border: 0px;
+    padding: 1rem 0rem 1rem 1rem;
+    margin-right: 20px;
+}
+
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .header-area{
+        padding: 20px;
+    }
+    .header-logo, 
+    .traveling, 
+    .banner-title{
+        font-size: 22px;
+    }
+    .menu-list, .navbar{
+        flex-direction: column;
+    }
+    .menu-list{
+        padding: 0;
+    }
+    .menu-list a{
+        margin: 0rem;
+    }
+    .menu-list li{
+        margin: 0rem 0rem 1rem 0rem;
+
+    }
+
+    .banner-part{
+        padding: 20px;
+    }
+    .banner-form input{
+        width: 95%;
+        margin-bottom: 24px;
+    }
+    
+    .banner-description{
+        font-size: 14px;
+    }
+    .banner-form{
+        margin-bottom: 20px;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+}
